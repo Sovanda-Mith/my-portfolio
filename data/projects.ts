@@ -2,17 +2,18 @@ const projects = [
   {
     title: "Simple E-commerce Website",
     description:
-      "You can use the admin panel to add products and track the orders.",
+      "Next.js project with sqlite prisma and stripe payment + resend",
     imageUrl: "/e-com-image.png",
     liveUrl: "https://itzreignstore.onrender.com/",
     sourceUrl: "https://github.com/Sovanda-Mith/ecommerce-next-js",
   },
   {
-    title: "Project 2",
-    description: "Description 2",
-    imageUrl: "",
-    liveUrl: "",
-    sourceUrl: "",
+    title: "Simple Color Picker",
+    description:
+      "I built this website with Vite + React JS and it's able to toggle between light mode and dark mode with tailwindcss and changing the state of color plus saving those states into localStorage.",
+    imageUrl: "/color-app.png",
+    liveUrl: "https://colorpicker-app.vercel.app/",
+    sourceUrl: "https://github.com/Sovanda-Mith/colorpicker-app",
   },
 ];
 
