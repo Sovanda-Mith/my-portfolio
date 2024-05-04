@@ -37,10 +37,7 @@ export default function Social() {
           alt="upwork icon"
         ></Image>
       </Link>
-      <Link
-        href="https://www.fiverr.com/mith_sovanda?up_rollout=true"
-        target="_blank"
-      >
+      <Link href="https://www.fiverr.com/mith_sovanda" target="_blank">
         <Image
           src="/fiverr.png"
           width={40}

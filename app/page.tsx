@@ -1,4 +1,5 @@
 import Description from "@/components/Description";
+import ProjectsPage from "@/components/ProjectsPage";
 import Social from "@/components/Social";
 import Image from "next/image";
 
@@ -18,7 +19,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center mt-40">
           <Image
             className="border-2 border-black rounded-lg"
-            src="/my-pf.jpg"
+            src="/my-pf.png"
             width={200}
             height={200}
             alt="Picture of the author"
@@ -32,7 +33,10 @@ export default function Home() {
       <div className="bg-white text-black p-10">
         <Description></Description>
       </div>
-      
+      <div className="flex justify-center item-center h-full text-4xl pt-10 pb-10">
+        Portfolio
+      </div>
+      <ProjectsPage></ProjectsPage>
     </div>
   );
 }
