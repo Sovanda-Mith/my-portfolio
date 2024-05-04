@@ -3,7 +3,6 @@ import Nav from "@/components/Nav";
 import ProjectsPage from "@/components/ProjectsPage";
 import Social from "@/components/Social";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
