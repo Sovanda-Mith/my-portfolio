@@ -28,7 +28,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <div>
       <Card>
         <CardHeader>
-          <CardTitle>{title}</CardTitle>
+          <Link href={liveUrl} className="hover:text-blue-500">
+            <CardTitle>{title}</CardTitle>
+          </Link>
           <CardDescription>{description}</CardDescription>
         </CardHeader>
         <CardContent>

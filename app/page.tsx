@@ -17,7 +17,7 @@ export default function Home() {
             height={200}
             alt="Picture of the author"
           ></Image>
-          <div className="mt-7 text-4xl">
+          <div className="mt-7 text-4xl hover:text-cyan-500">
             Student, Developer & Game Enthusiast
           </div>
           <Social />
