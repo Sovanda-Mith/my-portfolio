@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <div>
-      <div className="ml-3 mt-3 text-xl">Contact</div>
+      <div className="ml-3 mt-3 text-xl font-bold">Contact</div>
       <hr className="mx-3 border-white" />
       <div className="flex text-xs mt-2">
         <Link href="mailto:vanda.can.read@gmail.com" target="_blank">

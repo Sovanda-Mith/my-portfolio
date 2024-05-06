@@ -14,7 +14,7 @@ export default function Education() {
           height={20}
           alt="scholar logo"
         />
-        <div className="ml-2 mt-3 text-xl">Education</div>
+        <div className="ml-2 mt-3 text-xl font-bold">Education</div>
       </div>
       <hr className="mx-3 border-white" />
       {educations.map((education) => (
@@ -53,8 +53,8 @@ function EducationLayout({
         </Link>
         <Link href={locationUrl}>{location}</Link>
       </div>
-      <div className="ml-1 text-lg">{name}</div>
-      <div className="ml-1 text-sm">{description}</div>
+      <div className="ml-1 text-lg font-bold">{name}</div>
+      <div className="ml-1 text-sm font-semibold">{description}</div>
     </div>
   );
 }

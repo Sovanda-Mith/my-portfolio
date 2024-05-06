@@ -4,7 +4,7 @@ import { ISkill } from "@/data/type";
 export default function Skill() {
   return (
     <div>
-      <div className="ml-3 mt-3 text-xl">Skills</div>
+      <div className="ml-3 mt-3 text-xl font-bold">Skills</div>
       <hr className="mx-3 border-white" />
       <ProgrammingSkill />
       <ToolSkill />
