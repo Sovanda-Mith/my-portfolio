@@ -46,7 +46,7 @@ export default function Contact() {
         </Link>
       </div>
       <div className="flex text-xs mt-1">
-        <Link href="" target="_blank">
+        <Link href="https://mith-sovanda.vercel.app/" target="_blank">
           <Image
             className="ml-3"
             src="/home.png"
@@ -55,8 +55,12 @@ export default function Contact() {
             alt="home icon"
           />
         </Link>
-        <Link href="" target="_blank" className="ml-3">
-          placeholder
+        <Link
+          href="https://mith-sovanda.vercel.app/"
+          target="_blank"
+          className="ml-3"
+        >
+          https://mith-sovanda.vercel.app/
         </Link>
       </div>
       <div className="flex text-xs mt-1">
