@@ -25,7 +25,7 @@ export const programLanguages: ISkill[] = [
   {
     Icon: BsCircleFill,
     name: "TypeScript",
-    level: "50%",
+    level: "60%",
   },
   {
     Icon: BsCircleFill,
