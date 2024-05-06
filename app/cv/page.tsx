@@ -1,6 +1,7 @@
 import Hero from "./_components/Hero";
 import Contact from "./_components/Contact";
 import Skill from "./_components/Skill";
+import Education from "./_components/Education";
 
 export default function page() {
   return (
@@ -13,7 +14,10 @@ export default function page() {
               <Contact />
               <Skill />
             </div>
-            <div className="dark:bg-neutral-700 w-2/3 h-5/6"></div>
+            <div className="dark:bg-neutral-700 w-2/3 h-5/6">
+              <Education />
+              {/* <Experience /> */}
+            </div>
           </div>
         </div>
       </div>
