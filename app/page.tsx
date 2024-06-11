@@ -2,20 +2,14 @@ import Description from "@/components/Description";
 import Nav from "@/components/Nav";
 import ProjectsPage from "@/components/ProjectsPage";
 import Social from "@/components/Social";
+import VideoBackground from "@/components/VideoBackground";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
       <div className="h-dvh w-full bg-neutral-900 relative">
-        <video
-          src="/video_background.mp4"
-          autoPlay
-          loop
-          muted
-          className="w-full h-full object-cover"
-        ></video>
-        <div className="absolute top-0 w-full h-full">
+        <VideoBackground />        <div className="absolute top-0 w-full h-full">
           <Nav />
           <div className="flex flex-col justify-center items-center mt-40 text-white">
             <Image

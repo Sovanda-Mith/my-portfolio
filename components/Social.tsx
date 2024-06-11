@@ -37,14 +37,6 @@ export default function Social() {
           alt="upwork icon"
         ></Image>
       </Link>
-      <Link href="https://www.fiverr.com/mith_sovanda" target="_blank">
-        <Image
-          src="/fiverr.png"
-          width={40}
-          height={30}
-          alt="fiverr icon"
-        ></Image>
-      </Link>
       <Link href="mailto:vanda.can.read@gmail.com">
         <Image src="/gmail.png" width={40} height={30} alt="gmail icon"></Image>
       </Link>
