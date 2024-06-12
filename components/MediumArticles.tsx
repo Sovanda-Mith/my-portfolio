@@ -12,7 +12,7 @@ export default function MediumArticles() {
       .then((data) => setArticles(data.items));
   }, []);
   return (
-    <div>
+    <div className="grid grid-cols-3">
       {articles.map((article, index) => (
         <MediumCard key={index} article={article} />
       ))}

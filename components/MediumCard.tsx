@@ -22,11 +22,20 @@ type ArticleCardProps = {
 };
 
 export default function MediumCard({ article }: ArticleCardProps) {
+  const regex = /<img[^>]+src="([^">]+)"/;
+  const match = (article.content as any).match(regex);
+  const firstImg = match[1];
+
+  const modifiedContent = (article.content as any).replace(
+    /<figure[^>]*>(.*?)<\/figure>/g,
+    ""
+  );
   return (
     <>
-      <Card className="flex flex-col space w-1/2 mb-5 ml-3">
+      <Card className="flex flex-col space w-full mb-5 ml-3">
         <CardHeader>
-          <CardTitle className="text-lg font-semibold">
+          <img src={firstImg} alt={article.title} className="w-full" />
+          <CardTitle className="text-2xl font-semibold">
             {article.title}
           </CardTitle>
           <div className="flex gap-4">
@@ -39,7 +48,7 @@ export default function MediumCard({ article }: ArticleCardProps) {
         <CardContent>
           <div
             dangerouslySetInnerHTML={{
-              __html: article.content.substring(0, 200).concat("..."),
+              __html: modifiedContent.substring(0, 100).concat("..."),
             }}
           ></div>
         </CardContent>
