@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -34,7 +35,7 @@ export default function MediumCard({ article }: ArticleCardProps) {
     <>
       <Card className="flex flex-col space w-full mb-5 ml-3">
         <CardHeader>
-          <img src={firstImg} alt={article.title} className="w-full" />
+          <Image src={firstImg} alt={article.title} width={1000} height={1000} className="w-full" />
           <CardTitle className="text-2xl font-semibold">
             {article.title}
           </CardTitle>
