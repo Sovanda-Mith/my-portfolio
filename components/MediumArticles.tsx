@@ -6,7 +6,7 @@ export default function MediumArticles() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sovanda_m"
+      `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sovanda_m&api_key=${process.env.NEXT_PUBLIC_RSS_API_KEY}`,
     )
       .then((res) => res.json())
       .then((data) => setArticles(data.items));
