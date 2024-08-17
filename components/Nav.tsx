@@ -14,9 +14,6 @@ export default function Nav() {
         <Link href="/goals" className="hover:text-slate-500">
           Life Goals
         </Link>
-        <Link href="/cv" className="hover:text-slate-500">
-          CV
-        </Link>
       </div>
     </div>
   );
