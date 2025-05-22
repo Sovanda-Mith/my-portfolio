@@ -1,5 +1,4 @@
 import Nav from "@/components/Nav";
-import { Checkbox } from "@/components/ui/checkbox";
 import MyGoals from "./_components/MyGoals";
 import CurrentGoals from "./_components/CurrentGoals";
 

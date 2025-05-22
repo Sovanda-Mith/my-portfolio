@@ -37,7 +37,11 @@ export default function CurrentGoals() {
         </div>
         <div>
           <Checkbox id="current8" className="mr-3" disabled />
-          <label htmlFor="current8">Getting better at flutter</label>
+          <label htmlFor="current8">Getting better at Cybersecurity</label>
+        </div>
+        <div>
+          <Checkbox id="current9" className="mr-3" disabled />
+          <label htmlFor="current9">Getting better at DevOps</label>
         </div>
       </div>
     </div>
