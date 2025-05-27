@@ -1,11 +1,19 @@
 const projects = [
   {
-    title: "Simple E-commerce Website",
+    title: "Portfolio",
     description:
-      "Next.js project with sqlite prisma and stripe payment + resend, the website loading speed is slow at the beginning because I'm deploying it in render, it's not your connection, please be patient.🫥 ",
-    imageUrl: "/e-com-image.png",
-    liveUrl: "https://itzreignstore.onrender.com/",
-    sourceUrl: "https://github.com/Sovanda-Mith/ecommerce-next-js",
+      "The first project have to be the portfolio, it is always being updated. It is built with Next.js and tailwindcss. The special thing but this is that I used an api to call my articles from medium to display here.",
+    imageUrl: "/portfolio.png",
+    liveUrl: "https://mith-sovanda.vercel.app/",
+    sourceUrl: "https://github.com/Sovanda-Mith/my-portfolio.git",
+  },
+  {
+    title: "Digital Text Board",
+    description:
+      "Vanilla JS + HTML + CSS, It was a final project of my year 3 class",
+    imageUrl: "/text-board.png",
+    liveUrl: "https://sovanda-mith.github.io/text-board/",
+    sourceUrl: "https://github.com/Sovanda-Mith/text-board.git",
   },
   {
     title: "Simple Color Picker",

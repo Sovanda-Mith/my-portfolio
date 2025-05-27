@@ -2,6 +2,7 @@ import Description from "@/components/Description";
 import Nav from "@/components/Nav";
 import ProjectsPage from "@/components/ProjectsPage";
 import Social from "@/components/Social";
+import TechStack from "@/components/TechStack";
 import VideoBackground from "@/components/VideoBackground";
 import Image from "next/image";
 
@@ -9,7 +10,8 @@ export default function Home() {
   return (
     <div>
       <div className="h-dvh w-full bg-neutral-900 relative">
-        <VideoBackground />        <div className="absolute top-0 w-full h-full">
+        <VideoBackground />{" "}
+        <div className="absolute top-0 w-full h-full">
           <Nav />
           <div className="flex flex-col justify-center items-center mt-40 text-white">
             <Image
@@ -33,6 +35,10 @@ export default function Home() {
         Portfolio
       </div>
       <ProjectsPage />
+      <div className="flex justify-center text-4xl text-white pt-10 pb-10 bg-neutral-800">
+        Tech Stack
+      </div>
+      <TechStack />
     </div>
   );
 }
