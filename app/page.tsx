@@ -35,9 +35,6 @@ export default function Home() {
         Portfolio
       </div>
       <ProjectsPage />
-      <div className="flex justify-center text-4xl text-white pt-10 pb-10 bg-neutral-800">
-        Tech Stack
-      </div>
       <TechStack />
     </div>
   );
