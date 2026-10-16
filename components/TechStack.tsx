@@ -1,96 +1,117 @@
-import { FaReact, FaGitAlt, FaVuejs, FaLaravel } from "react-icons/fa";
+import { Database, Layers3, ServerCog, Terminal } from "lucide-react";
 
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiTypescript,
-  SiNestjs,
-  SiPhp,
-  SiMysql,
-  SiPostgresql,
-} from "react-icons/si";
-
-const tools = [
+const stackGroups = [
   {
-    name: "Laravel",
-    icon: <FaLaravel className="text-red-500 text-4xl" />,
-    level: 80,
+    number: "01",
+    Icon: Terminal,
+    title: "Languages & foundations",
+    description: "The core languages I use to build web applications, APIs, automation, and reports.",
+    technologies: ["PHP", "TypeScript", "JavaScript", "Python", "SQL", "HTML", "CSS"],
   },
   {
-    name: "Nest.js",
-    icon: <SiNestjs className="text-white text-4xl" />,
-    level: 70,
+    number: "02",
+    Icon: Layers3,
+    title: "Frameworks & interfaces",
+    description: "Tools I use across modern frontend, backend, mobile, and content-driven products.",
+    technologies: [
+      "Laravel",
+      "Vue.js",
+      "Next.js",
+      "React",
+      "NestJS",
+      "Flutter",
+      "Tailwind CSS",
+      "jQuery",
+      "WordPress",
+    ],
   },
   {
-    name: "React",
-    icon: <FaReact className="text-cyan-400 text-4xl" />,
-    level: 70,
+    number: "03",
+    Icon: Database,
+    title: "Data & communication",
+    description: "Technologies behind relational data, reporting, APIs, and real-time experiences.",
+    technologies: [
+      "PostgreSQL",
+      "MySQL",
+      "Oracle PL/SQL",
+      "Prisma ORM",
+      "REST APIs",
+      "WebSockets",
+      "MQTT",
+    ],
   },
   {
-    name: "Vue.js",
-    icon: <FaVuejs className="text-green-500 text-4xl" />,
-    level: 80,
-  },
-  {
-    name: "Next.js",
-    icon: <SiNextdotjs className="text-white text-4xl" />,
-    level: 70,
-  },
-  {
-    name: "Tailwind",
-    icon: <SiTailwindcss className="text-sky-300 text-4xl" />,
-    level: 90,
-  },
-  {
-    name: "TypeScript",
-    icon: <SiTypescript className="text-blue-500 text-4xl" />,
-    level: 75,
-  },
-  {
-    name: "PHP",
-    icon: <SiPhp className="text-blue-500 text-4xl" />,
-    level: 75,
-  },
-  {
-    name: "MySQL",
-    icon: <SiMysql className="text-blue-500 text-4xl" />,
-    level: 70,
-  },
-  {
-    name: "PostgreSQL",
-    icon: <SiPostgresql className="text-blue-500 text-4xl" />,
-    level: 70,
-  },
-  {
-    name: "Git",
-    icon: <FaGitAlt className="text-orange-600 text-4xl" />,
-    level: 80,
+    number: "04",
+    Icon: ServerCog,
+    title: "Infrastructure & delivery",
+    description: "The systems and delivery tooling I use to ship, secure, and maintain applications.",
+    technologies: [
+      "Docker",
+      "Nginx",
+      "Linux",
+      "Git",
+      "GitHub CI/CD",
+      "GitLab CI",
+      "SonarQube",
+      "SSL & DNS",
+    ],
   },
 ];
 
 export default function TechStack() {
   return (
-    <div className="bg-neutral-900 py-12 px-6 text-white">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {tools.map((tech, index) => (
-          <div
-            key={index}
-            className="bg-neutral-800 rounded-2xl p-5 shadow-md hover:scale-105 transition"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              {tech.icon}
-              <h3 className="text-xl font-semibold">{tech.name}</h3>
-            </div>
-            <div className="w-full bg-neutral-700 rounded-full h-3">
-              <div
-                className="bg-cyan-500 h-3 rounded-full"
-                style={{ width: `${tech.level}%` }}
-              ></div>
-            </div>
-            <div className="text-right text-sm mt-1">{tech.level}%</div>
-          </div>
-        ))}
+    <section className="bg-neutral-950 px-5 py-16 text-white sm:px-8 lg:px-10 lg:py-20">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-10 max-w-2xl">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+            Current toolkit
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Technologies I work with
+          </h2>
+          <p className="mt-4 leading-7 text-neutral-400">
+            A practical stack shaped by full-stack products, financial reporting systems,
+            real-time applications, and production infrastructure.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          {stackGroups.map((group) => (
+            <article
+              key={group.title}
+              className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-cyan-300/25 sm:p-7"
+            >
+              <div className="mb-6 flex items-start justify-between gap-4">
+                <div className="flex items-start gap-4">
+                  <div className="rounded-xl border border-cyan-300/15 bg-cyan-300/[0.08] p-2.5 text-cyan-300">
+                    <group.Icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold sm:text-2xl">{group.title}</h3>
+                    <p className="mt-2 max-w-lg text-sm leading-6 text-neutral-400">
+                      {group.description}
+                    </p>
+                  </div>
+                </div>
+                <span className="text-sm font-semibold tracking-widest text-cyan-300">
+                  {group.number}
+                </span>
+              </div>
+
+              <ul className="flex flex-wrap gap-2" aria-label={`${group.title} technologies`}>
+                {group.technologies.map((technology) => (
+                  <li
+                    key={technology}
+                    className="rounded-full border border-white/10 bg-neutral-900 px-3.5 py-2 text-sm text-neutral-200"
+                  >
+                    {technology}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
